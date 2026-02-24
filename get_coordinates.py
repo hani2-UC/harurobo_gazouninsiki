@@ -173,12 +173,7 @@ def make_mask_for_color(hsv, color_name: str) -> np.ndarray:
 def detect_from_mask(mask: np.ndarray, area_min: int, kernel: np.ndarray,
                      min_circularity: float, min_radius: float,
                      max_count: int = 2) -> List[Dict]:
-    """
-    欠け・帯抜け（横線）に強く、背景誤検出を減らした版
-    - HSVは変えない
-    - マスク後処理 + 凸包ベース判定 + fill_ratio判定
-    - 端除外 / 巨大候補除外 / bbox比 / extent_circle / 中心優先
-    """
+
     if mask is None:
         return []
 
@@ -622,4 +617,5 @@ def main():
     print(" - color_i variables in globals() like blue_1, red_1 ...")
 
 if __name__ == "__main__":
+
     main()
