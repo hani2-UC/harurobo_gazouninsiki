@@ -41,7 +41,7 @@ pip install opencv-python numpy
 ## 実行方法
 
 ```bash
-python タイトル無し3.py
+python get_coordinates.py
 ```
 
 > ファイル名は任意です。保存した `.py` の名前で実行してください。
@@ -100,7 +100,7 @@ CAM_INDEX = 0
 FRAME_W, FRAME_H = 640, 480
 ```
 
-### 2. ロボット姿勢（固定）
+### 2. ロボット姿勢（機体に合わせてね)
 
 ```python
 ROBOT_X = 0.0
